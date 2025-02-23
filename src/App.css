@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainBoxColor:#ffffff;
+    --mainPadding:30px 20px;
+    --shadowColor:#383838;
+    --borderColor:rgba(255, 255, 255, 0.76);
+    --buttonColor:rgb(92, 62, 62);
+    --hovBgColor:rgb(199, 198, 198);
+    --hovColor:rgb(43, 42, 42);
+}
+a{
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.input{
+    font: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.container{
+    min-height: 100vh;
+    padding: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    background:url(../public/images/background.jpg) no-repeat center/cover ;
+}
+form{
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    padding: var(--mainPadding);
+    border-radius: 6px;
+    border: 1px solid var(--borderColor);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgb(0, 0, 0,0.1);
+    box-shadow: 0 2px 4px var(--shadowColor);
+}
+form h1{
+    text-align: center;
+    font-weight: 700;
+    color: var(--mainBoxColor);
+}
+form>.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+    padding:0 10px;
+}
+form>.row input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: .9em;
+    border: 1px solid var(--borderColor);
+    background-color: transparent;
+    color: var(--mainBoxColor);
+}
+.username-field input::placeholder ,.password-field input::placeholder{
+    color: var(--mainBoxColor);
+}
+form>.row  i{
+    position: absolute;
+    right: 34px;
+    color: var(--mainBoxColor);
+}
+.Instruction-field{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding:0 10px;
+}
+.Instruction-field .checkbox{
+    gap: 5px;
+}
+.Instruction-field .checkbox label,
+.Instruction-field a{
+    font-size: .8em;
+    color: var(--mainBoxColor);
+}
+input[type="submit"]{
+    width: calc(100% - 20px);
+    margin-inline: auto;
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: var(--mainBoxColor);
+    color: var(--buttonColor);
+}
+input[type="submit"]:hover{
+    scale: 1.05;
+    background-color:rgb(199, 198, 198);
+    color: rgb(43, 42, 42);
+}
+.new-account{
+    flex-wrap: wrap;
+    gap: 5px;
+    color: var(--mainBoxColor);
+}
+.new-account p{
+    font-size: .8em;
+    font-weight: 500;
+}
+.new-account a{
+    font-size: .9em;
+    font-weight: 600;
+}
