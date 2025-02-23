@@ -5,7 +5,7 @@ function Login() {
   const [userame, setUserame] = useState("");
   const [password, setPassword] = useState("");
 
-  function Login (){
+  function login (){
     if(userame !== "" && password !== ""){
       console.log(userame);
       console.log(password);
@@ -31,7 +31,7 @@ function Login() {
         </div>
         <a href="/"  title="Forgot Password?">Forgot password ?</a>
         </div>
-        <input type="submit" onClick={Login} value="Login" />
+        <input type="submit" onClick={login} value="Login" />
         <div className="new-account flex align-center justify-center">
             <p>Don't have an account ?</p>
             <a href="/"  title="Register">Register</a>
